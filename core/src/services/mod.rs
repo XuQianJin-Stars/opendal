@@ -129,6 +129,11 @@ mod github;
 #[cfg(feature = "services-github")]
 pub use github::*;
 
+#[cfg(feature = "services-goosefs")]
+mod goosefs;
+#[cfg(feature = "services-goosefs")]
+pub use goosefs::*;
+
 #[cfg(feature = "services-gridfs")]
 mod gridfs;
 #[cfg(feature = "services-gridfs")]
